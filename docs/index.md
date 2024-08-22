@@ -4,8 +4,8 @@ layout: home
 
 hero:
   name: "SynopAI"
-  text: "花小容"
-  tagline: 私人 AI 小秘
+  text: "花小容AI留学助手"
+  tagline: ChatMate 是一个专注服务留学生群体的私人助手
   image:
     src: /logo.png
     alt: SynopAI
@@ -21,6 +21,7 @@ features:
   - title: 功能 A
     icon: ⚙️
     details: 这里填写我们的功能 A
+    link: /快速开始
   - title: 功能 B
     icon: 🚀
     details: 这里填写我们的功能 B
