@@ -23,7 +23,7 @@ export const en = defineConfig({
 
     footer: {
       message: 'Released under the MIT License.',
-      copyright: `Copyright © 2024-${new Date().getFullYear()} SynopAI`
+      copyright: `Copyright © 2024-${new Date().getFullYear()} 云想亿熵(上海)智能科技有限责任公司`
     }
   }
 })
