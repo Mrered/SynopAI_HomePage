@@ -1,15 +1,17 @@
 export default {
   '/快速开始': [{
     text: '快速开始',
+    link: '快速开始',
     items: [
       {
-        text: '1',
-        link: '/快速开始'
+        text: '使用场景',
+        items: [
+          {text: '信息收集', link: '信息收集'},
+          {text: '课业辅导', link: '课业辅导'},
+          {text: '情感陪伴', link: '情感陪伴'},
+          {text: '行程规划', link: '行程规划'}
+        ]
       },
-      {
-        text: '2',
-        link: '/快速开始'
-      }
     ]
   }]
 }
