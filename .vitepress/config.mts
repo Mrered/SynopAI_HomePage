@@ -1,4 +1,6 @@
 import { defineConfig } from 'vitepress'
+import nav from './nav.mts'
+import sidebar from './sidebar.mts'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -7,43 +9,8 @@ export default defineConfig({
   srcDir: 'docs',
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
-    nav: [
-      {
-        text: '文档',
-        link: '/快速开始',
-        activeMatch: '/快速开始'
-      },
-      {
-        text: '示例',
-        link: '/examples/',
-        activeMatch: '/examples'
-      },
-      {
-        text: '关于',
-        link: '/更多内容',
-        activeMatch: '/更多内容'
-      },
-      {
-        text: '体验',
-        link: 'https://bing.com'
-      }
-    ],
-
-    sidebar: {
-      '/快速开始': [{
-        text: '快速开始',
-        items: [
-          {
-            text: '1',
-            link: '/快速开始'
-          },
-          {
-            text: '2',
-            link: '/快速开始'
-          }
-        ]
-      }]
-    },
+    nav: nav,
+    sidebar: sidebar,
 
     socialLinks: [
       { icon: 'github', link: 'https://github.com/SynopAI/' }
