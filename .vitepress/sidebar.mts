@@ -20,7 +20,7 @@ export default {
         {text: '信息收集', link: '/信息收集'},
         {text: '课业辅导', link: '/课业辅导'},
         {text: '情感陪伴', link: '/情感陪伴'},
-        {text: '行程规划', link: '/行程规划'}
+        {text: '生活辅助', link: '/生活辅助'}
       ]
     }
   ]
