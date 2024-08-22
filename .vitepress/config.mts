@@ -1,53 +1,28 @@
 import { defineConfig } from 'vitepress'
+import nav from './nav.mts'
+import sidebar from './sidebar.mts'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: "SynopAI",
   description: "花小容 您的 AI 小秘",
   srcDir: 'docs',
+  head: [['link', { rel: 'icon', href: '/favicon.ico' }]],
+  cleanUrls: true,
+
+  lastUpdated: true,
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
-    nav: [
-      {
-        text: '文档',
-        link: '/快速开始',
-        activeMatch: '/快速开始'
-      },
-      {
-        text: '示例',
-        link: '/examples/',
-        activeMatch: '/examples'
-      },
-      {
-        text: '关于',
-        link: '/更多内容',
-        activeMatch: '/更多内容'
-      },
-      {
-        text: '体验',
-        link: 'https://bing.com'
-      }
-    ],
-
-    sidebar: {
-      '/快速开始': [{
-        text: '快速开始',
-        items: [
-          {
-            text: '1',
-            link: '/快速开始'
-          },
-          {
-            text: '2',
-            link: '/快速开始'
-          }
-        ]
-      }]
-    },
+    nav: nav,
+    sidebar: sidebar,
 
     socialLinks: [
       { icon: 'github', link: 'https://github.com/SynopAI/' }
-    ]
+    ],
+    footer: {
+      message: '根据 MIT 许可证发布',
+      copyright: '版权所有 © 2024-至今 SynopAI'
+    }
   },
 
   locales: {
