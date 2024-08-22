@@ -1,10 +1,6 @@
-# 构建 VitePress 站点并将其部署到 GitHub Pages 的示例工作流程
-#
 name: Deploy VitePress site to Pages
 
 on:
-  # 在针对 `main` 分支的推送上运行。如果你
-  # 使用 `master` 分支作为默认分支，请将其更改为 `master`
   push:
     branches: [main]
 
@@ -13,7 +9,7 @@ on:
 
 # 设置 GITHUB_TOKEN 的权限，以允许部署到 GitHub Pages
 permissions:
-  contents: read
+  contents: write
   pages: write
   id-token: write
 
@@ -28,27 +24,34 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: 📥 检出代码
         uses: actions/checkout@v4
         with:
           fetch-depth: 0 # 如果未启用 lastUpdated，则不需要
       # - uses: pnpm/action-setup@v3 # 如果使用 pnpm，请取消注释
       # - uses: oven-sh/setup-bun@v1 # 如果使用 Bun，请取消注释
-      - name: Setup Node
+      - name: 📦 安装 Node
         uses: actions/setup-node@v4
         with:
           node-version: 20
           cache: yarn
-      - name: Setup Pages
+      - name: ⚙️ 设置 Pages
         uses: actions/configure-pages@v4
-      - name: Install dependencies
+      - name: ✅ 安装依赖
         run: yarn install
-      - name: Build with VitePress
+      - name: 📝 构建静态页面
         run: yarn docs:build
-      - name: Upload artifact
+      - name: 🚀 更新文章
         uses: actions/upload-pages-artifact@v3
         with:
           path: .vitepress/dist
+      - name: 🗂️ 提交构建后的文件到 gh-pages 分支
+        run: |
+          git config --global user.email "actions@github.com"
+          git config --global user.name "Github Actions"
+          git add .vitepress/dist
+          git commit -m "静态页面"
+          git push origin `git subtree split --prefix .vitepress/dist main`:gh-pages --force
 
   # 部署工作
   deploy:
@@ -59,6 +62,6 @@ jobs:
     runs-on: ubuntu-latest
     name: Deploy
     steps:
-      - name: Deploy to GitHub Pages
+      - name: 🚀 部署到 GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
