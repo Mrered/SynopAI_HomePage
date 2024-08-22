@@ -5,14 +5,9 @@ export default [
     activeMatch: '/快速开始'
   },
   {
-    text: '示例',
-    link: '/examples/',
-    activeMatch: '/examples'
-  },
-  {
-    text: '关于',
-    link: '/更多内容',
-    activeMatch: '/更多内容'
+    text: '使用场景',
+    link: '/使用场景/信息收集',
+    activeMatch: '/使用场景'
   },
   {
     text: '体验',

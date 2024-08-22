@@ -15,11 +15,12 @@ export default {
     {
       text: '使用场景',
       collapsed: false,
+      base: '/使用场景',
       items: [
-        {text: '信息收集', link: '信息收集'},
-        {text: '课业辅导', link: '课业辅导'},
-        {text: '情感陪伴', link: '情感陪伴'},
-        {text: '行程规划', link: '行程规划'}
+        {text: '信息收集', link: '/信息收集'},
+        {text: '课业辅导', link: '/课业辅导'},
+        {text: '情感陪伴', link: '/情感陪伴'},
+        {text: '行程规划', link: '/行程规划'}
       ]
     }
   ]
