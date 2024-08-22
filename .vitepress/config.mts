@@ -9,6 +9,7 @@ export default defineConfig({
   srcDir: 'docs',
   head: [['link', { rel: 'icon', href: '/favicon.ico' }]],
   cleanUrls: true,
+  ignoreDeadLinks: true,
 
   lastUpdated: true,
   themeConfig: {
