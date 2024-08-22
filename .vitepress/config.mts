@@ -7,6 +7,10 @@ export default defineConfig({
   title: "SynopAI",
   description: "花小容 您的 AI 小秘",
   srcDir: 'docs',
+  head: [['link', { rel: 'icon', href: '/favicon.ico' }]],
+  cleanUrls: true,
+
+  lastUpdated: true,
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: nav,
@@ -14,7 +18,11 @@ export default defineConfig({
 
     socialLinks: [
       { icon: 'github', link: 'https://github.com/SynopAI/' }
-    ]
+    ],
+    footer: {
+      message: '根据 MIT 许可证发布',
+      copyright: '版权所有 © 2024-至今 SynopAI'
+    }
   },
 
   locales: {
