@@ -1,6 +1,6 @@
 export default [
   {
-    text: '文档',
+    text: '快速开始',
     link: '/快速开始',
     activeMatch: '/快速开始'
   },
