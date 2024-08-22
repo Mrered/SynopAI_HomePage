@@ -22,7 +22,7 @@ export default defineConfig({
     ],
     footer: {
       message: '根据 MIT 许可证发布',
-      copyright: '版权所有 © 2024-至今 SynopAI'
+      copyright: '版权所有 © 2024-至今 云想亿熵(上海)智能科技有限责任公司'
     }
   },
 
