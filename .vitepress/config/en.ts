@@ -12,7 +12,7 @@ export const en = defineConfig({
     nav: nav(),
 
     sidebar: {
-      '/en/quickstart': { base: '/en/quickstart', items: sidebarQuickStart() },
+      '/en/get-started': { base: '/en/get-started', items: sidebarQuickStart() },
       '/en/usage': { base: '/en/usage', items: sidebarUseage() }
     },
 
