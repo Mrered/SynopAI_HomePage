@@ -2,13 +2,15 @@
 
 # 什么是 ChatMate ？{#what-is-chatmate}
 
-Chat Mate 是一个专注服务留学生群体的学习助手
+ChatMate 是一个专注服务留学生群体的学习助手
 
 <div class="tip custom-block" style="padding-top: 8px">
 
 只是想尝试一下？查看[演示视频](https://www.bilibili.com/video/BV1WSWgeXEgH/?vd_source=8efd81eccbe016cf85c48d0cef159938)。
 
 </div>
+
+<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=113003777229526&bvid=BV1WSWgeXEgH&cid=500001657940222&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
 
 ## 使用场景 {#use-cases}
 
