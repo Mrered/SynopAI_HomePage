@@ -12,8 +12,8 @@ export const en = defineConfig({
     nav: nav(),
 
     sidebar: [
-      { base: '/en/get-started', items: sidebarQuickStart() },
-      { base: '/en/usage', items: sidebarUseage() }
+      { base: '/en', items: sidebarQuickStart() },
+      { base: '/en', items: sidebarUseage() }
     ],
 
     // sidebar: {
@@ -56,7 +56,7 @@ function sidebarQuickStart(): DefaultTheme.SidebarItem[] {
   return [
     {
       text: 'Get Started',
-      link: '/en/get-started'
+      link: '/get-started'
       // collapsed: false,
       // items: [
       //   {

@@ -12,8 +12,8 @@ export const zh = defineConfig({
     nav: nav(),
 
     sidebar: [
-      { base: '/get-started', items: sidebarQuickStart() },
-      { base: '/usage', items: sidebarUseage() }
+      { items: sidebarQuickStart() },
+      { items: sidebarUseage() }
     ],
 
     // sidebar: {
