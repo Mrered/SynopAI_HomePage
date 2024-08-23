@@ -16,6 +16,7 @@ export const en = defineConfig({
       { base: '/en', items: sidebarUseage() }
     ],
 
+    // 如果需要使用分离式侧边栏，请反注释下面四行的内容
     // sidebar: {
     //   '/en/get-started': { base: '/en/get-started', items: sidebarQuickStart() },
     //   '/en/usage': { base: '/en/usage', items: sidebarUseage() }
@@ -57,6 +58,8 @@ function sidebarQuickStart(): DefaultTheme.SidebarItem[] {
     {
       text: 'Get Started',
       link: '/get-started'
+      // 如果需要使用分离式侧边栏，请反注释下面一行的内容
+      // link: '/en/get-started'
       // collapsed: false,
       // items: [
       //   {

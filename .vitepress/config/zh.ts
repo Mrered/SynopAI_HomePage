@@ -16,6 +16,7 @@ export const zh = defineConfig({
       { items: sidebarUseage() }
     ],
 
+    // 如果需要使用分离式侧边栏，请反注释下面四行的内容
     // sidebar: {
     //   '/get-started': { base: '/get-started', items: sidebarQuickStart() },
     //   '/usage': { base: '/usage', items: sidebarUseage() }
