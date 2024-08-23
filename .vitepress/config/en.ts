@@ -11,10 +11,15 @@ export const en = defineConfig({
   themeConfig: {
     nav: nav(),
 
-    sidebar: {
-      '/en/get-started': { base: '/en/get-started', items: sidebarQuickStart() },
-      '/en/usage': { base: '/en/usage', items: sidebarUseage() }
-    },
+    sidebar: [
+      { base: '/en/get-started', items: sidebarQuickStart() },
+      { base: '/en/usage', items: sidebarUseage() }
+    ],
+
+    // sidebar: {
+    //   '/en/get-started': { base: '/en/get-started', items: sidebarQuickStart() },
+    //   '/en/usage': { base: '/en/usage', items: sidebarUseage() }
+    // },
 
     editLink: {
       pattern: 'https://github.com/synopai/homepage/edit/main/docs/:path',

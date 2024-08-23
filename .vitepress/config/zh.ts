@@ -11,10 +11,15 @@ export const zh = defineConfig({
   themeConfig: {
     nav: nav(),
 
-    sidebar: {
-      '/get-started': { base: '/get-started', items: sidebarQuickStart() },
-      '/usage': { base: '/usage', items: sidebarUseage() }
-    },
+    sidebar: [
+      { base: '/get-started', items: sidebarQuickStart() },
+      { base: '/usage', items: sidebarUseage() }
+    ],
+
+    // sidebar: {
+    //   '/get-started': { base: '/get-started', items: sidebarQuickStart() },
+    //   '/usage': { base: '/usage', items: sidebarUseage() }
+    // },
 
     editLink: {
       pattern: 'https://github.com/synopai/homepage/edit/main/docs/:path',
