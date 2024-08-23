@@ -31,9 +31,9 @@ export const en = defineConfig({
 function nav(): DefaultTheme.NavItem[] {
   return [
     {
-      text: 'QuickStart',
-      link: '/en/quickstart',
-      activeMatch: '/en/quickstart'
+      text: 'Get Started',
+      link: '/en/get-started',
+      activeMatch: '/en/get-started'
     },
     {
       text: 'Usage',
@@ -50,8 +50,8 @@ function nav(): DefaultTheme.NavItem[] {
 function sidebarQuickStart(): DefaultTheme.SidebarItem[] {
   return [
     {
-      text: 'QuickStart',
-      link: '/en/quickstart'
+      text: 'Get Started',
+      link: '/en/get-started'
       // collapsed: false,
       // items: [
       //   {
@@ -68,10 +68,10 @@ function sidebarUseage(): DefaultTheme.SidebarItem[] {
       collapsed: false,
       base: '/en/usage',
       items: [
-        {text: 'information-gathering', link: '/information-gathering'},
-        {text: 'academic-tutoring', link: '/academic-tutoring'},
-        {text: 'emotional-companionship', link: '/emotional-companionship'},
-        {text: 'trip-planning', link: '/trip-planning'}
+        {text: 'Information Gathering', link: '/information-gathering'},
+        {text: 'Academic Tutoring', link: '/academic-tutoring'},
+        {text: 'Emotional Companionship', link: '/emotional-companionship'},
+        {text: 'Life Assistance', link: '/life-assistance'}
       ]
     }
   ]

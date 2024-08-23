@@ -56,8 +56,8 @@ function nav(): DefaultTheme.NavItem[] {
   return [
     {
       text: '快速开始',
-      link: '/quickstart',
-      activeMatch: '/quickstart'
+      link: '/get-started',
+      activeMatch: '/get-started'
     },
     {
       text: '使用场景',
@@ -75,7 +75,7 @@ function sidebarQuickStart(): DefaultTheme.SidebarItem[] {
   return [
     {
       text: '快速开始',
-      link: 'quickstart'
+      link: '/get-started'
       // collapsed: false,
       // items: [
       //   {
@@ -95,7 +95,7 @@ function sidebarUseage(): DefaultTheme.SidebarItem[] {
         {text: '信息收集', link: '/information-gathering'},
         {text: '课业辅导', link: '/academic-tutoring'},
         {text: '情感陪伴', link: '/emotional-companionship'},
-        {text: '生活辅助', link: '/trip-planning'}
+        {text: '生活辅助', link: '/life-assistance'}
       ]
     }
   ]
