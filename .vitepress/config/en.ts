@@ -37,7 +37,7 @@ function nav(): DefaultTheme.NavItem[] {
     },
     {
       text: 'Usage',
-      link: '/en/usage/信息收集',
+      link: '/en/usage/information-gathering',
       activeMatch: '/en/usage'
     },
     {
@@ -68,10 +68,10 @@ function sidebarUseage(): DefaultTheme.SidebarItem[] {
       collapsed: false,
       base: '/en/usage',
       items: [
-        {text: '信息收集', link: '/信息收集'},
-        {text: '课业辅导', link: '/课业辅导'},
-        {text: '情感陪伴', link: '/情感陪伴'},
-        {text: '生活辅助', link: '/生活辅助'}
+        {text: 'information-gathering', link: '/information-gathering'},
+        {text: 'academic-tutoring', link: '/academic-tutoring'},
+        {text: 'emotional-companionship', link: '/emotional-companionship'},
+        {text: 'trip-planning', link: '/trip-planning'}
       ]
     }
   ]

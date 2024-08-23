@@ -12,8 +12,8 @@ export const zh = defineConfig({
     nav: nav(),
 
     sidebar: {
-      '/快速开始': { base: '/快速开始', items: sidebarQuickStart() },
-      '/使用场景': { base: '/使用场景', items: sidebarUseage() }
+      '/quickstart': { base: '/quickstart', items: sidebarQuickStart() },
+      '/usage': { base: '/usage', items: sidebarUseage() }
     },
 
     editLink: {
@@ -56,13 +56,13 @@ function nav(): DefaultTheme.NavItem[] {
   return [
     {
       text: '快速开始',
-      link: '/快速开始',
-      activeMatch: '/快速开始'
+      link: '/quickstart',
+      activeMatch: '/quickstart'
     },
     {
       text: '使用场景',
-      link: '/使用场景/信息收集',
-      activeMatch: '/使用场景'
+      link: '/usage/information-gathering',
+      activeMatch: '/usage'
     },
     {
       text: '体验',
@@ -75,7 +75,7 @@ function sidebarQuickStart(): DefaultTheme.SidebarItem[] {
   return [
     {
       text: '快速开始',
-      link: '快速开始'
+      link: 'quickstart'
       // collapsed: false,
       // items: [
       //   {
@@ -90,12 +90,12 @@ function sidebarUseage(): DefaultTheme.SidebarItem[] {
     {
       text: '使用场景',
       collapsed: false,
-      base: '/使用场景',
+      base: '/usage',
       items: [
-        {text: '信息收集', link: '/信息收集'},
-        {text: '课业辅导', link: '/课业辅导'},
-        {text: '情感陪伴', link: '/情感陪伴'},
-        {text: '生活辅助', link: '/生活辅助'}
+        {text: '信息收集', link: '/information-gathering'},
+        {text: '课业辅导', link: '/academic-tutoring'},
+        {text: '情感陪伴', link: '/emotional-companionship'},
+        {text: '生活辅助', link: '/trip-planning'}
       ]
     }
   ]
