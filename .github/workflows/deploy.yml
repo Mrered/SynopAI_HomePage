@@ -22,7 +22,7 @@ concurrency:
 jobs:
   # 构建工作
   build:
-    runs-on: ubuntu-latest
+    runs-on: macos-latest
     steps:
       - name: 📥 检出代码
         uses: actions/checkout@v4
