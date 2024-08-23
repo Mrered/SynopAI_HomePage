@@ -12,10 +12,10 @@ hero:
   actions:
     - theme: brand
       text: Get Started
-      link: /get-started
+      link: /en/get-started
     - theme: alt
       text: Learn More
-      link: /learn-more
+      link: /en/learn-more
 
 features:
   - title: Information Gathering

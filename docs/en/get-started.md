@@ -1,3 +1,5 @@
+<!-- markdownlint-disable MD033 MD041-->
+
 # What is ChatMate? {#what-is-chatmate}
 
 ChatMate is a learning assistant focused on serving the needs of international students.
