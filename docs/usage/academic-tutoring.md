@@ -17,6 +17,12 @@
 
 ## 对输入内容的摘要总结
 
+<div class="tip custom-block" style="padding-top: 8px">
+
+点击这里查看[摘要总结](https://www.bilibili.com/video/BV1hdWRe4Eni/?vd_source=8efd81eccbe016cf85c48d0cef159938)。
+
+</div>
+
 我们总共有三种输入方式：
 
 1. 将目标文档放置在桌面目录下，按照第一条格式提问。
@@ -56,6 +62,18 @@
 1. 根据某个文件中的要求进行创作输出。
 2. 将目标展示在屏幕上，直接要求助手根据屏幕显示内容进行输出。
 
+<div class="tip custom-block" style="padding-top: 8px">
+
+点击这里查看[总结桌面文档](https://www.bilibili.com/video/BV1hdWRe4Eni/?vd_source=8efd81eccbe016cf85c48d0cef159938)。
+
+</div>
+
+<div class="tip custom-block" style="padding-top: 8px">
+
+点击这里查看[内容解读](https://www.bilibili.com/video/BV18dWRe4ED1/?vd_source=8efd81eccbe016cf85c48d0cef159938)。
+
+</div>
+
 具体的输入如下：
 
 ```txt
@@ -66,6 +84,12 @@
 ### 基于文件创作输出
 
 我们可以看到，我们的Chatmate首先会按照要求生成完整的文本内容在对话框中，当生成结束后，会自动将生成的内容保存为文档。
+
+<div class="tip custom-block" style="padding-top: 8px">
+
+点击这里查看[文档生成](https://www.bilibili.com/video/BV1h9WReZECy/?vd_source=8efd81eccbe016cf85c48d0cef159938)。
+
+</div>
 
 - **生成过程**
 
@@ -82,6 +106,12 @@
 ### 基于屏幕显示内容输出
 
 这里我假设了一个正在上课的场景，此时我的电脑上打开了老师发的课件，但我对课件中的内容不是很理解，于是我直接对助手说，“帮我理解一下ppt里的内容”。
+
+<div class="tip custom-block" style="padding-top: 8px">
+
+点击这里查看[内容解读](https://www.bilibili.com/video/BV18dWRe4ED1/?vd_source=8efd81eccbe016cf85c48d0cef159938)。
+
+</div>
 
 输出如下：
 

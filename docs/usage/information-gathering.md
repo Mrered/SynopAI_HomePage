@@ -6,9 +6,11 @@ Chatmate可以帮助有留学计划的同学在前期申请阶段高效的收集
 
 <div class="tip custom-block" style="padding-top: 8px">
 
-这里查看[演示视频](https://www.bilibili.com/video/BV1WSWgeXEgH/?vd_source=8efd81eccbe016cf85c48d0cef159938)。
+下方查看[演示视频](https://www.bilibili.com/video/BV1tFWde9EQ6/?share_source=copy_web&vd_source=a298688212d1b7de731067fed0888e9e)。
 
 </div>
+
+<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=113013759674044&bvid=BV1tFWde9EQ6&cid=500001660127540&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
 
 ## 快速链接学校官网
 
