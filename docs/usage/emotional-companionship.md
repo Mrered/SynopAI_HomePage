@@ -60,7 +60,7 @@
     **原始音色与对应文本**  
 
     <audio controls>
-      <source src="/others/emo/yucheng-org-01.wav" type="audio/mpeg">
+      <source src="/others/emo/yucheng-org-02.wav" type="audio/mpeg">
       你的浏览器不支持音频元素。
     </audio>
 
