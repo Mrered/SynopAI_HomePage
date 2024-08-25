@@ -17,9 +17,6 @@
   }
 }
 
-/* 保留原有的 :root 和媒体查询样式 */
-/* 保留原有的 :root 和媒体查询样式 */
-
 /* 新添加和修改的样式 */
 .pricing-section {
   display: flex;
@@ -37,44 +34,46 @@
   -webkit-text-fill-color: transparent;
   background-clip: text;
   color: transparent;
-  padding: 20px 0; /* 根据需要调整 */
-  font-weight: bold; /* 或者使用数值如600、700等 */
+  padding: 20px 0;
+  font-weight: bold;
 }
 
+/* 大屏幕样式 */
 .pricing-container {
   display: flex;
   justify-content: center;
-  gap: 100px; /* 增加卡片之间的距离 */
+  gap: 100px;
   width: 100%;
-  max-width: 900px; /* 稍微增加最大宽度 */
+  max-width: 900px;
+  margin: 0 auto; /* 确保容器水平居中 */
 }
 
 .pricing-card {
   background-color: white;
   border-radius: 50px;
   padding: 40px;
-  width: calc(50% - 20px); /* 调整宽度以适应更大的间距 */
+  flex: 1; /* 使卡片均匀分布 */
   display: flex;
   flex-direction: column;
 }
 
 .pricing-card.free {
-  background: linear-gradient(135deg, #7c5cfc, #5c8ffc); /* 渐变背景 */
+  background: linear-gradient(135deg, #7c5cfc, #5c8ffc);
   color: white;
-  box-shadow: 0 10px 100px rgba(124, 92, 252, 0.3); /* 淡淡的渐变色阴影 */
+  box-shadow: 0 10px 100px rgba(124, 92, 252, 0.3);
 }
 
 .pricing-card.paid {
   background-color: white;
   color: #333;
-  box-shadow: 0 10px 200px rgba(92, 143, 252, 0.3); /* 纯灰黑色阴影 */
+  box-shadow: 0 10px 200px rgba(92, 143, 252, 0.3);
 }
 
 .pricing-card h2 {
   margin-top: 0;
   font-size: 28px;
   margin-bottom: 15px;
-  font-weight: bold; /* 或者使用数值如600、700等 */
+  font-weight: bold;
 }
 
 .pricing-tag {
@@ -114,6 +113,7 @@
   left: 0;
   font-weight: bold;
 }
+
 .pricing-buttons {
   display: flex;
   justify-content: center;
@@ -129,8 +129,8 @@
   font-size: 16px;
   font-weight: bold;
   transition: all 0.3s ease;
-  flex: 1; /* 让按钮自动填充可用空间 */
-  text-align: center; /* 确保文字居中 */
+  flex: 1;
+  text-align: center;
 }
 
 .pricing-button.primary {
@@ -151,4 +151,29 @@
 .pricing-button:hover {
   transform: translateY(-2px);
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* 响应式布局 */
+@media (max-width: 960px) {
+  .pricing-container {
+    flex-direction: column; /* 改为垂直布局 */
+    gap: 50px;
+    padding: 20px; /* 增加内边距确保在小屏幕上有间距 */
+  }
+
+  .pricing-card {
+    width: 100%;
+    max-width: 400px; /* 确保卡片在小屏幕上不占满全屏 */
+    margin: 0 auto; /* 水平居中卡片 */
+  }
+
+  .pricing-buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .pricing-button {
+    width: 100%;
+    border-radius: 25px;
+  }
 }
