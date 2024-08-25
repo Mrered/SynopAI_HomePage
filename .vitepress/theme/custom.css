@@ -1,7 +1,6 @@
 :root {
   --vp-home-hero-name-color: transparent;
   --vp-home-hero-name-background: -webkit-linear-gradient(120deg, #bd34fe, #41d1ff);
-
   --vp-home-hero-image-background-image: linear-gradient(-45deg, #bd34fe 50%, #47caff 50%);
   --vp-home-hero-image-filter: blur(44px);
 }
@@ -16,4 +15,140 @@
   :root {
     --vp-home-hero-image-filter: blur(68px);
   }
+}
+
+/* 保留原有的 :root 和媒体查询样式 */
+/* 保留原有的 :root 和媒体查询样式 */
+
+/* 新添加和修改的样式 */
+.pricing-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+.pricing-title {
+  font-size: 48px;
+  margin-bottom: 50px;
+  text-align: center;
+  background: -webkit-linear-gradient(120deg, #bd34fe, #41d1ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  padding: 20px 0; /* 根据需要调整 */
+  font-weight: bold; /* 或者使用数值如600、700等 */
+}
+
+.pricing-container {
+  display: flex;
+  justify-content: center;
+  gap: 100px; /* 增加卡片之间的距离 */
+  width: 100%;
+  max-width: 900px; /* 稍微增加最大宽度 */
+}
+
+.pricing-card {
+  background-color: white;
+  border-radius: 50px;
+  padding: 40px;
+  width: calc(50% - 20px); /* 调整宽度以适应更大的间距 */
+  display: flex;
+  flex-direction: column;
+}
+
+.pricing-card.free {
+  background: linear-gradient(135deg, #7c5cfc, #5c8ffc); /* 渐变背景 */
+  color: white;
+  box-shadow: 0 10px 100px rgba(124, 92, 252, 0.3); /* 淡淡的渐变色阴影 */
+}
+
+.pricing-card.paid {
+  background-color: white;
+  color: #333;
+  box-shadow: 0 10px 200px rgba(92, 143, 252, 0.3); /* 纯灰黑色阴影 */
+}
+
+.pricing-card h2 {
+  margin-top: 0;
+  font-size: 28px;
+  margin-bottom: 15px;
+  font-weight: bold; /* 或者使用数值如600、700等 */
+}
+
+.pricing-tag {
+  font-size: 14px;
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 5px 10px;
+  border-radius: 20px;
+  margin-left: 10px;
+}
+
+.pricing-card.paid .pricing-tag {
+  background-color: #f0f0f0;
+}
+
+.pricing-card p {
+  font-size: 16px;
+  margin-bottom: 25px;
+}
+
+.pricing-card ul {
+  list-style-type: none;
+  padding: 0;
+  flex-grow: 1;
+  margin-bottom: 25px;
+}
+
+.pricing-card li {
+  margin-bottom: 15px;
+  position: relative;
+  padding-left: 30px;
+  font-size: 16px;
+}
+
+.pricing-card li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  font-weight: bold;
+}
+.pricing-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: auto;
+}
+
+.pricing-button {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  flex: 1; /* 让按钮自动填充可用空间 */
+  text-align: center; /* 确保文字居中 */
+}
+
+.pricing-button.primary {
+  background-color: white;
+  color: #7c5cfc;
+}
+
+.pricing-button.secondary {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #cccccc;
+}
+
+.pricing-card.paid .pricing-button.primary {
+  background-color: #7c5cfc;
+  color: white;
+}
+
+.pricing-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }

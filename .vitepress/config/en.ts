@@ -47,6 +47,11 @@ function nav(): DefaultTheme.NavItem[] {
       activeMatch: '/en/usage'
     },
     {
+      text: 'Pricing',
+      link: '/en/price',
+      activeMatch: '/en/price'
+    },
+    {
       text: 'Try it',
       link: 'https://bing.com'
     }
