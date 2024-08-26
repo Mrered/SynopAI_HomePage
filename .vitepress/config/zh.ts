@@ -72,12 +72,12 @@ function nav(): DefaultTheme.NavItem[] {
     },
     {
       text: '价格',
-      link: '/price',
-      activeMatch: '/price'
+      link: '/pricing',
+      activeMatch: '/pricing'
     },
     {
       text: '体验',
-      link: 'https://bing.com'
+      link: 'https://www.bilibili.com/video/BV1o1W1eGEYa'
     }
   ]
 }

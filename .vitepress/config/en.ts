@@ -48,12 +48,12 @@ function nav(): DefaultTheme.NavItem[] {
     },
     {
       text: 'Pricing',
-      link: '/en/price',
-      activeMatch: '/en/price'
+      link: '/en/pricing',
+      activeMatch: '/en/pricing'
     },
     {
       text: 'Try it',
-      link: 'https://bing.com'
+      link: 'https://www.bilibili.com/video/BV1o1W1eGEYa'
     }
   ]
 }
