@@ -15,7 +15,7 @@ hero:
       link: /en/get-started
     - theme: alt
       text: Learn More
-      link: /en/learn-more
+      link: /en/usage/information-gathering
 
 features:
   - title: Information Gathering

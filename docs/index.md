@@ -15,7 +15,7 @@ hero:
       link: /get-started
     - theme: alt
       text: 更多内容
-      link: /learn-more
+      link: /usage/information-gathering
 
 features:
   - title: 信息收集
