@@ -1,7 +1,9 @@
 name: Regenerate Vite security lockfile
 
 on:
-  workflow_dispatch:
+  push:
+    branches:
+      - codex/fix-vite-security-advisory
 
 permissions:
   contents: write
