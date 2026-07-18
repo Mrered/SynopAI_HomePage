@@ -1,0 +1,28 @@
+name: Regenerate Vite security lockfile
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  regenerate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: yarn
+      - run: corepack enable
+      - run: corepack prepare yarn@1.22.22 --activate
+      - run: yarn install --ignore-scripts --frozen-lockfile=false
+      - run: yarn docs:build
+      - run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git rm .github/workflows/codex-regenerate-vite-lock.yml
+          git add package.json yarn.lock
+          git commit -m "fix(deps): resolve Vite security advisory"
+          git push
