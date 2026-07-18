@@ -19,7 +19,7 @@ jobs:
           cache: yarn
       - run: corepack enable
       - run: corepack prepare yarn@1.22.22 --activate
-      - run: yarn install --ignore-scripts --frozen-lockfile=false
+      - run: yarn install --ignore-scripts
       - run: yarn docs:build
       - run: |
           git config user.name "github-actions[bot]"
